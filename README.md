@@ -1,4 +1,4 @@
-my_bash_profile
+My. files
 ===============
 
-My .bash_profile
+All of my . files
