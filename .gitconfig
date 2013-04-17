@@ -5,7 +5,7 @@
 [alias]
         pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
         ci = commit
-        st = status
+        st = status -sb
         br = branch
         co = checkout
         df = diff
