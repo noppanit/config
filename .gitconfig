@@ -19,3 +19,7 @@
 	default = simple
 [core]
 	editor = /usr/bin/vim
+[color]
+	status = always
+	diff = always
+	log = always

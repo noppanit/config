@@ -27,3 +27,16 @@ function rm () {
 }
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# added by Anaconda3 2.4.0 installer
+export PATH="/Users/ncharass/anaconda/bin:$PATH"
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
