@@ -1,18 +1,25 @@
-execute pathogen#infect()
 set nocompatible
 syntax on
-filetype plugin indent on
+filetype off 
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdTree'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 set number
 set noswapfile
 set nobackup
 set nowb
-set guifont=Monaco:h16
+set guifont=Monaco:h14
 
-set wildignore+=node_modules,env,vendor,.DS_Store
+set wildignore+=node_modules,env,vendor,.DS_Store,bower_components
 
 set background=dark
-colorscheme solarized
 
 " NERDTree Mappins
 " Open Nerd Tree with <Leader>n
@@ -28,5 +35,7 @@ augroup markdown
 augroup END
 let NERDTreeShowHidden=1
 
+call vundle#end()            " required
+filetype plugin indent on    " required
 
-command! Speedbumptest !cd ~/MyProjects/fusion.net/vip-quickstart && vagrant ssh -c 'cd /srv/www/wp-content/themes/vip/fusion-theme/lib/speed-bumps/ && phpunit'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
