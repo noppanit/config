@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdTree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tomasr/molokai'
+Plugin 'rking/ag.vim'
 
 set number
 set noswapfile
@@ -45,6 +46,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]tmp|node_modules|bower_components|\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

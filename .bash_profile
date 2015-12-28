@@ -40,3 +40,6 @@ export PATH="/Users/ncharass/anaconda/bin:$PATH"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+eval "$(docker-machine env default)"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
