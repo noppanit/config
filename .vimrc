@@ -16,6 +16,7 @@ Plugin 'rking/ag.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
 
 set number
 set noswapfile
