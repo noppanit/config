@@ -13,6 +13,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tomasr/molokai'
 Plugin 'rking/ag.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'scrooloose/syntastic'
 
 set number
 set noswapfile
@@ -29,6 +32,16 @@ set wildignore+=node_modules,env,vendor,.DS_Store,bower_components
 
 set background=light
 
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " NERDTree Mappins
 " Open Nerd Tree with <Leader>n
 map <Leader>n <esc>:NERDTreeToggle<cr>
@@ -39,6 +52,9 @@ map <Leader>r <esc>:NERDTreeFind<cr>
 
 let NERDTreeShowHidden=1
 
+" Ag
+let g:ag_working_path_mode="r"
+
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
 let g:ctrlp_max_files = 0
@@ -48,6 +64,12 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" map keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 call vundle#end()            " required
 filetype plugin indent on    " required
