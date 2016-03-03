@@ -27,6 +27,8 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set spell spelllang=en_us
+
 autocmd BufEnter * silent! lcd %:p:h
 
 set wildignore+=node_modules,env,vendor,.DS_Store,bower_components
