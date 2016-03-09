@@ -1,14 +1,13 @@
 #Colour Git command
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
 function git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 
 # need this set to xterm-256color to get proper color support in vim
 export TERM='xterm-256color'
-
-alias ls='ls -G'
-alias ll='ls -lhG'
-alias la='ls -lahG'
 export LSCOLORS="GxFxCxDxBxEgEdabagacad"
 export GREP_OPTIONS="--color"
 
@@ -36,10 +35,9 @@ function rm () {
 }
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
-
-if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
-fi
+alias ls='ls -G'
+alias ll='ls -lhG'
+alias la='ls -lahG'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
