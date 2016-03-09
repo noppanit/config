@@ -1,3 +1,2 @@
 #!/bin/sh
-
-sudo ln -s ./.tmux.conf ~/.tmux.conf
+sudo ln -s $PWD/.tmux.conf ~/.tmux.conf

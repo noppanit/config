@@ -27,6 +27,7 @@ function rm () {
 }
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+alias conde_hive='sh /Users/ncharass/opensource/apache-hive/bin/beeline -u jdbc:hive2://presto-ci-srv01.aws.conde.io:10000'
 
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc

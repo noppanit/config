@@ -1,6 +1,7 @@
 set nocompatible
 syntax on
 filetype off 
+let &t_Co=256
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -67,6 +68,15 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Tmux
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+"nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
 
 " map keys
 noremap <Up> <NOP>
