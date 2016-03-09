@@ -48,7 +48,8 @@ let g:syntastic_check_on_wq = 0
 
 " NERDTree Mappins
 " Open Nerd Tree with <Leader>n
-map <Leader>n <esc>:NERDTreeToggle<cr>
+" toggle NERD Tree with CTRL N
+nmap <silent> <c-n> :NERDTreeToggle<cr>
 let NERDTreeIgnore=['\.pyc$', '.DS_Store', '__pycache__'] "don't show .pyc in the Tree 
 
 " Reveal current file in NERDTree with <Leader>r
