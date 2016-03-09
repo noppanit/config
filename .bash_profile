@@ -3,6 +3,15 @@ function git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 
+# need this set to xterm-256color to get proper color support in vim
+export TERM='xterm-256color'
+
+alias ls='ls -G'
+alias ll='ls -lhG'
+alias la='ls -lahG'
+export LSCOLORS="GxFxCxDxBxEgEdabagacad"
+export GREP_OPTIONS="--color"
+
 git config --global color.status always
 git config --global color.diff always
 git config --global color.log always
@@ -27,7 +36,6 @@ function rm () {
 }
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
-alias conde_hive='sh /Users/ncharass/opensource/apache-hive/bin/beeline -u jdbc:hive2://presto-ci-srv01.aws.conde.io:10000'
 
 if [ -f ~/.bashrc ]; then
         . ~/.bashrc
