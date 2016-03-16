@@ -2,14 +2,10 @@
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
+
 function git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
-
-# need this set to xterm-256color to get proper color support in vim
-export TERM='xterm-256color'
-export LSCOLORS="GxFxCxDxBxEgEdabagacad"
-export GREP_OPTIONS="--color"
 
 git config --global color.status always
 git config --global color.diff always
@@ -34,19 +30,22 @@ function rm () {
   done
 }
 
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 alias ls='ls -G'
 alias ll='ls -lhG'
 alias la='ls -lahG'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# added by Anaconda3 2.4.0 installer
-export PATH="/Users/ncharass/anaconda/bin:$PATH"
-
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+
 eval "$(docker-machine env default)"
 
+# added by Anaconda3 2.4.0 installer
+export PATH="/Users/ncharass/anaconda/bin:$PATH"
+
 export JAVA_HOME=$(/usr/libexec/java_home)
+export LSCOLORS="GxFxCxDxBxEgEdabagacad"
+export GREP_OPTIONS="--color"
+

@@ -1,9 +1,9 @@
 [user]
-	        name = Noppanit Charassinvichai
+	  name = Noppanit Charassinvichai
 		email = noppanit.c@gmail.com
 
 [alias]
-	        pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+	  pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 		ci = commit
 		st = status -sb
 		br = branch

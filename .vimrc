@@ -24,7 +24,6 @@ set noswapfile
 set nobackup
 set nowb
 set guifont=Monaco:h14
-set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -34,7 +33,7 @@ autocmd BufEnter * silent! lcd %:p:h
 
 set wildignore+=node_modules,env,vendor,.DS_Store,bower_components
 
-set background=light
+set background=dark
 
 " syntastic
 set statusline+=%#warningmsg#
