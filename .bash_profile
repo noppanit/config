@@ -7,8 +7,6 @@ git config --global color.status always
 git config --global color.diff always
 git config --global color.log always
 
-PS1='\[\033[0;37m\][\[\033[01;36m\]\W\[\033[0;37m\]] \[\033[0;32m\]$(git_branch)\[\033[00m\]\$ '
-
 #Delete stuff to .Trash instead of to the limbo
 function rm () {
   local path
@@ -31,10 +29,6 @@ alias ll='ls -lhG'
 alias la='ls -lahG'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
 
 eval "$(docker-machine env default)"
 
