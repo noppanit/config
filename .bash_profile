@@ -3,10 +3,6 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-function git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
-}
-
 git config --global color.status always
 git config --global color.diff always
 git config --global color.log always
