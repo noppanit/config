@@ -61,6 +61,8 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
+source ~/.bash_profile
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
