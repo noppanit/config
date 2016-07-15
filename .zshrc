@@ -54,6 +54,7 @@ plugins=(git nvm)
 # User configuration
 
 export PATH="/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/.nvm/v0.10.40/bin:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein"
+export PATH=/Users/ncharass/bin/:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

@@ -18,6 +18,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
+Plugin 'fatih/vim-go'
 
 set number
 set noswapfile
