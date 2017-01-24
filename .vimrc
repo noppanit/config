@@ -16,9 +16,11 @@ Plugin 'tomasr/molokai'
 Plugin 'rking/ag.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'fatih/vim-go'
+Plugin 'skwp/greplace.vim'
+Plugin 'python-mode/python-mode'
 
 set number
 set noswapfile
@@ -27,8 +29,12 @@ set nowb
 set guifont=Monaco:h14
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
+set scrolloff=4
 set expandtab
 set spell spelllang=en_us
+set encoding=utf-8
+
 
 autocmd BufEnter * silent! lcd %:p:h
 
@@ -59,6 +65,12 @@ let NERDTreeShowHidden=1
 
 " Ag
 let g:ag_working_path_mode="r"
+
+" python-mode
+let g:pymode_rope = 0
+let g:pymode_folding = 0
+let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+let g:pymode_lint_ignore = "E501,W"
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>

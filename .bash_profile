@@ -13,10 +13,9 @@ alias la='ls -lahG'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-eval "$(docker-machine env default)"
-
 # added by Anaconda3 2.4.0 installer
 export PATH="/Users/ncharass/anaconda/bin:$PATH"
+export PATH="/Users/ncharass/opensource/depot_tools:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export LSCOLORS="GxFxCxDxBxEgEdabagacad"
