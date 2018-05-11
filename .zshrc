@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/ncharass/.oh-my-zsh
+export VAULT_ADDR=https://prod.vault.conde.io:443
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +54,7 @@ plugins=(git nvm)
 
 # User configuration
 
-export PATH="/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/.nvm/v0.10.40/bin:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein"
+export PATH="/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/.nvm/v0.10.40/bin:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/Users/ncharass/anaconda/bin:/Users/ncharass/.rbenv/shims:/Users/ncharass/Developer/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein:/Users/ncharass/opensource/pig-0.15.0/bin:/Users/ncharass/opensource/apache-storm/bin:/Users/ncharass/opensource/lein/:$PATH"
 export PATH=/Users/ncharass/bin/:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -88,3 +89,8 @@ source ~/.bash_profile
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

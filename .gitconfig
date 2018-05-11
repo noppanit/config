@@ -17,6 +17,7 @@
 	required = true
 [push]
 	default = simple
+	followTags = true
 [core]
 	editor = /usr/bin/vim
 [color]
