@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdTree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'tomasr/molokai'
 Plugin 'rking/ag.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'derekwyatt/vim-scala'
@@ -99,6 +98,5 @@ noremap <Right> <NOP>
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-colorscheme molokai
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
