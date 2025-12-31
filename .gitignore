@@ -1,0 +1,30 @@
+# Backup files created by install script
+*.backup
+
+# OS Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might contain secrets
+.env
+.env.local
+credentials.json
+secrets.yaml
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Editor directories
+.vscode/
+.idea/
+
+# Scripts directory temporary files
+scripts/*.log
+scripts/tmp/
